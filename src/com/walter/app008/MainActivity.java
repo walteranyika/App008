@@ -3,6 +3,7 @@ package com.walter.app008;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -39,12 +40,8 @@ public class MainActivity extends Activity {
 	}	
 	public void retrieve(View v)
 	{
-	  Database db=new Database(this);	
-	  ArrayList<Person> data= db.fetch();
-	  for (Person person : data) 
-	  {
-		 Log.d("NAMES", person.getNames() ); 
-	  }		
+      Intent x=new Intent(this, UsersActivity.class);
+      startActivity(x);
 	}
 	
 	

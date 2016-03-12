@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.walter.app008.UsersActivity"
+            android:label="@string/title_activity_users" >
+        </activity>
+        <activity
+            android:name="com.walter.app008.DropDownActivity"
+            android:label="@string/title_activity_drop_down" >
+        </activity>
     </application>
 
 </manifest>
